@@ -1,0 +1,28 @@
+Source: libnl-unl
+Maintainer: Russ Dill <russ.dill@gmail.com>
+Section: libs
+Priority: optional
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 12), cmake, libnl-3-dev, libnl-genl-3-dev
+Homepage: https://git.github.org/russdill/libnl-unl
+Vcs-Browser: https://git.github.org/russdill/libnl-unl
+Vcs-Git: https://git.github.org/russdill/libnl-unl.git
+
+Package: libnl-unl
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Section: libs
+Description: unl portion of OpenWrt libnl-tiny.
+ This package contains the libnl-unl shared library.
+
+Package: libnl-unl-dev
+Architecture: any
+Multi-Arch: same
+Depends: libnl-unl (= ${binary:Version}), libc6-dev|libc-dev, libnl-3-dev, libnl-genl-3-dev, ${misc:Depends}
+Section: libdevel
+Description: Development files for libnl-unl
+ This package contains the development files (headers, static libraries,
+ and symlinks) for libnl-unl.

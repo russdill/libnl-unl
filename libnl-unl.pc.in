@@ -1,0 +1,11 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@/libnl-unl
+
+Name: libnl-unl
+Description: unl functions from libnl-tiny for netlink sockets
+Requires: libnl-3.0 libnl-genl-3.0
+Version: 2.0
+Libs: -L${libdir} -lnl-unl
+Cflags: -I${includedir}

@@ -1,0 +1,17 @@
+Makefile
+CMakeCache.txt
+CMakeFiles
+*.cmake
+*.a
+*.so
+*.dylib
+obj-*
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/*.debhelper.log
+debian/*.substvars
+debian/files
+debian/changelog
+debian/tmp/
+debian/libnl-unl-dev/
+debian/libnl-unl/
